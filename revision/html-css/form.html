@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./unnamed.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <body>
+<form onsubmit="contact()">
+    <h1>Contact Form</h1>
+    <label>Name:</label>  <br>
+    <label><input type="text" name="firstname"> </label> <br> <br>
+    <label> Last Name: </label> <br>
+    <label><input type="text" name="lastname"> </label> <br> <br>
+
+   <label> Gender:
+            <label><input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+            <input type="radio" name="gender" value="others" /> Other
+            <input id="gender" /> </label>
+            <br /><br />
+
+   <label>Country:</label> <br> 
+    <label><select name="Country" id="Country">
+        <option value="IN">India</option>
+        <option value="NP" selected> Nepal </option>
+        <option value="UK">United Kingdom</option>
+        <option value="USA">United States of America</option>
+        <option value="OTH">Other</option>
+      </select></lable> <br> <br>
+
+       <!-- File Input -->
+       <label> Your file:</label>
+       <label> <input type="file" name="myFile"><br><br> </label>
+
+     <label> Subject: </label> <br>
+      <label><textarea name="txtarea" rows="5" cols="100"></textarea></label> <br> <br>
+
+   <label><button type="submit" onclick="contact()">Submit</button></label>
+
+</form>
+<script src="index.js"> </script>
+</body>
+</html>
